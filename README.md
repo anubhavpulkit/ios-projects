@@ -13,6 +13,7 @@ I am learning the Swift 5.1  language through the [Official Documentation](https
 - I am Rich
 - Dicee
 - Magic ball
+- Poor Jammu
 
 
 
