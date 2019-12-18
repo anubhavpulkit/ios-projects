@@ -15,25 +15,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I Am Rich" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQt-YU-yWO">
-                                <rect key="frame" x="115" y="218" width="184" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
-                                <color key="textColor" red="0.13725490196078433" green="0.21568627450980393" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="0yZ-sZ-JC9">
-                                <rect key="frame" x="72" y="313" width="270" height="270"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rDS-Zf-ayu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Di4-Ud-7Kq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="406.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQt-YU-yWO">
+                                                <rect key="frame" x="115.5" y="180" width="183.5" height="46.5"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                                <color key="textColor" red="0.13725490196078433" green="0.21568627450980393" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="aQt-YU-yWO" firstAttribute="centerX" secondItem="Di4-Ud-7Kq" secondAttribute="centerX" id="ABF-JN-1WG"/>
+                                            <constraint firstItem="aQt-YU-yWO" firstAttribute="centerY" secondItem="Di4-Ud-7Kq" secondAttribute="centerY" id="jT6-Vv-8c1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fec-xP-BVw">
+                                        <rect key="frame" x="0.0" y="411.5" width="414" height="406.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="0yZ-sZ-JC9">
+                                                <rect key="frame" x="80" y="125" width="254" height="156"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="515" id="LV3-VX-Pky"/>
+                                                    <constraint firstAttribute="height" constant="377" id="oT6-HP-nhE"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0yZ-sZ-JC9" firstAttribute="centerY" secondItem="fec-xP-BVw" secondAttribute="centerY" priority="1" id="LDX-Ak-zZu"/>
+                                            <constraint firstItem="0yZ-sZ-JC9" firstAttribute="centerY" secondItem="fec-xP-BVw" secondAttribute="centerY" id="T85-95-fhc"/>
+                                            <constraint firstItem="0yZ-sZ-JC9" firstAttribute="centerX" secondItem="fec-xP-BVw" secondAttribute="centerX" id="TD6-lY-uWD"/>
+                                            <constraint firstItem="0yZ-sZ-JC9" firstAttribute="centerY" secondItem="fec-xP-BVw" secondAttribute="centerY" id="Yw2-fK-P4h"/>
+                                            <constraint firstItem="0yZ-sZ-JC9" firstAttribute="centerY" secondItem="fec-xP-BVw" secondAttribute="centerY" id="dVg-zk-wua"/>
+                                            <constraint firstItem="0yZ-sZ-JC9" firstAttribute="centerX" secondItem="fec-xP-BVw" secondAttribute="centerX" id="eLO-FU-bKq"/>
+                                            <constraint firstItem="0yZ-sZ-JC9" firstAttribute="centerX" secondItem="fec-xP-BVw" secondAttribute="centerX" id="sS2-Ac-Y4K"/>
+                                            <constraint firstItem="0yZ-sZ-JC9" firstAttribute="centerX" secondItem="fec-xP-BVw" secondAttribute="centerX" id="z3c-a4-anv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rDS-Zf-ayu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3FB-U6-d2z"/>
+                            <constraint firstItem="rDS-Zf-ayu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9hj-LP-xkS"/>
+                            <constraint firstItem="rDS-Zf-ayu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LKs-S6-xiF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rDS-Zf-ayu" secondAttribute="bottom" id="eoF-IO-6Lw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="118"/>
+            <point key="canvasLocation" x="135.9375" y="115.94202898550725"/>
         </scene>
     </scenes>
     <resources>
