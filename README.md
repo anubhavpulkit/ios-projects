@@ -16,6 +16,7 @@ I am learning the Swift 5.1  language through the [Official Documentation](https
 - Poor Jammu
 - Calculator
 - Xylophone
+- Egg Timer
 
 
 
