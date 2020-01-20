@@ -17,6 +17,7 @@ I am learning the Swift 5.1  language through the [Official Documentation](https
 - Calculator
 - Xylophone
 - Egg Timer
+- Destini
 
 
 
