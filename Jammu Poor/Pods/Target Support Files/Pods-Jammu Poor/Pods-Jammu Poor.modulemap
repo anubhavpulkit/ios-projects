@@ -1,0 +1,6 @@
+framework module Pods_Jammu_Poor {
+  umbrella header "Pods-Jammu Poor-umbrella.h"
+
+  export *
+  module * { export * }
+}

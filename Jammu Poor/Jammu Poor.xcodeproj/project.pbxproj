@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E5ECEA7F002A5A89BD95692 /* Pods_Jammu_Poor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547B2489C8B3DDB41B62CECD /* Pods_Jammu_Poor.framework */; };
 		E665FB012373369F00A29D1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665FB002373369F00A29D1A /* AppDelegate.swift */; };
 		E665FB032373369F00A29D1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665FB022373369F00A29D1A /* SceneDelegate.swift */; };
 		E665FB052373369F00A29D1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665FB042373369F00A29D1A /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		547B2489C8B3DDB41B62CECD /* Pods_Jammu_Poor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jammu_Poor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C7FFA0F1D393CB1CAA460B /* Pods-Jammu Poor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jammu Poor.release.xcconfig"; path = "Target Support Files/Pods-Jammu Poor/Pods-Jammu Poor.release.xcconfig"; sourceTree = "<group>"; };
+		A9D53C0016CEE96E63032C1E /* Pods-Jammu Poor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jammu Poor.debug.xcconfig"; path = "Target Support Files/Pods-Jammu Poor/Pods-Jammu Poor.debug.xcconfig"; sourceTree = "<group>"; };
 		E665FAFD2373369F00A29D1A /* Jammu Poor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jammu Poor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E665FB002373369F00A29D1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E665FB022373369F00A29D1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5ECEA7F002A5A89BD95692 /* Pods_Jammu_Poor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEE2F77F3EE66612E34278D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9D53C0016CEE96E63032C1E /* Pods-Jammu Poor.debug.xcconfig */,
+				94C7FFA0F1D393CB1CAA460B /* Pods-Jammu Poor.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E665FAF42373369F00A29D1A = {
 			isa = PBXGroup;
 			children = (
 				E665FAFF2373369F00A29D1A /* Jammu Poor */,
 				E665FAFE2373369F00A29D1A /* Products */,
+				BEE2F77F3EE66612E34278D0 /* Pods */,
+				EAAEB6425CD679A1693B7116 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Jammu Poor";
 			sourceTree = "<group>";
 		};
+		EAAEB6425CD679A1693B7116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				547B2489C8B3DDB41B62CECD /* Pods_Jammu_Poor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E665FB11237336A100A29D1A /* Build configuration list for PBXNativeTarget "Jammu Poor" */;
 			buildPhases = (
+				AB7F471210A1AB5C5F0521F1 /* [CP] Check Pods Manifest.lock */,
 				E665FAF92373369F00A29D1A /* Sources */,
 				E665FAFA2373369F00A29D1A /* Frameworks */,
 				E665FAFB2373369F00A29D1A /* Resources */,
+				4D82843A12837F74AED7EECB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D82843A12837F74AED7EECB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jammu Poor/Pods-Jammu Poor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jammu Poor/Pods-Jammu Poor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jammu Poor/Pods-Jammu Poor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB7F471210A1AB5C5F0521F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jammu Poor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E665FAF92373369F00A29D1A /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		E665FB12237336A100A29D1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D53C0016CEE96E63032C1E /* Pods-Jammu Poor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		E665FB13237336A100A29D1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C7FFA0F1D393CB1CAA460B /* Pods-Jammu Poor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
